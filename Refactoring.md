@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+I made the code more clean and readable by moving the logic for checking if the candidate is a string up to where the candidate is assigned. This way, the reader has the complete information without having to scroll up and down. The "else" block for an empty input is also attached to the end of this statement. Now all logic for defining the candidate is together. The last thing that happns is the length check. This is a more logical and easy to understand order. I also considered using more ternary operators, but with the multiple conditions, if/else is more clean and readable in my opinion.
